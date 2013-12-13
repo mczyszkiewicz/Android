@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">mateusz.czyszkiewicz</string>
+    <string name="app_name">Splash Screen</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_splash">MainActivity</string>
-
+    <string name="title_activity_main">MainActivity</string>
+	<string name="text">Please type your name</string>
+	<string name="login_button">Login</string>
+	<string name="Info">Info</string>
+	<string name="Warning">Warning</string>
+	<string name="no_name">There is no name! Please type your name.</string>
+	<string name="ok">OK</string>
 </resources>
