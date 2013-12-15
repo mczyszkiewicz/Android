@@ -24,7 +24,7 @@ public class MainActivity extends FragmentActivity {
 	public void showAlert(View v) {
 
 		FragmentManager fm = getSupportFragmentManager();
-		mydial.show(fm, "cos");
+		mydial.show(fm, "dialog");
 		mydial.setName(name.getText().toString());
 
 	}

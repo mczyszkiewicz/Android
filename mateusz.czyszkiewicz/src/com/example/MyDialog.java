@@ -48,4 +48,11 @@ public class MyDialog extends DialogFragment {
 		}
 	}
 
+	@Override
+	public void onSaveInstanceState(Bundle arg0) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(arg0);
+		arg0.putString("myString", myname);
+	}
+
 }

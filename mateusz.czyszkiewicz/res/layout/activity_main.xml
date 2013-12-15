@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/textViewInfo"
         android:layout_marginTop="33dp"
         android:ems="10" >
@@ -34,11 +35,11 @@
         android:id="@+id/button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/editText_name"
         android:layout_below="@+id/editText_name"
-        android:layout_marginRight="38dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/login_button"
-        android:onClick="showAlert" />
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="24dp"
+        android:onClick="showAlert"
+        android:text="@string/login_button" />
 
 </RelativeLayout>
