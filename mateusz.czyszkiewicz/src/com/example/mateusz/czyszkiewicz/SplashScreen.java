@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 public class SplashScreen extends Activity {
+	private boolean stop = false;
 	private static final int CZAS = 5000;
 	private Thread background;
 
@@ -16,22 +17,41 @@ public class SplashScreen extends Activity {
 		background = new Thread() {
 			public void run() {
 				try {
+
 					sleep(CZAS);
-					Intent intent = new Intent(SplashScreen.this,
-							MainActivity.class);
-					startActivity(intent);
-					finish();
+
 				} catch (Exception e) {
 					e.printStackTrace();
+				} finally {
+					if (!stop) {
+						Intent intent = new Intent(SplashScreen.this,
+								MainActivity.class);
+						startActivity(intent);
+						finish();
+					} else
+						
+					finish();
+
 				}
 			}
 		};
 		background.start();
+
 	}
 
 	public void onBackPressed() {
 		super.onBackPressed();
 		finish();
+	}
+
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		if (background.isAlive()) {
+			this.stop = true;
+
+		}
 	}
 
 }
