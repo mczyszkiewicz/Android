@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mateusz.czyszkiewicz</string>
+    <string name="addm">Dodawanie wydatku</string>
+    <string name="removem">Remove an item</string>
+    <string name="editm">Edit an item</string>
+    <string name="nazwa">Nazwa</string>
+    <string name="typ">Typ</string>
+    <string name="dodaj">dodaj</string>
+    <string name="wartosc">wartosc</string>
+    <string name="data">data</string>
+    <string name="data_hint">dd/mm/yyyy</string>
+    <string name="edytuj">Edytuj</string>
+    <string name="wartosc_hint">np 15.4</string>
+     <string name="nazwa_hint">Tekst</string>
+
+</resources>
